@@ -1,0 +1,297 @@
+html, body, ul, ol, li,
+h1, h2, h3, h4, h5, h6, p, div {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Hiragino Kaku Gothic ProN W3', sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.05em;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  width: 100%;
+  max-width: 1170px;
+}
+
+#loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  z-index: 20;
+}
+
+.loaded {
+  animation: loadedAnime 1s forwards;
+}
+
+@keyframes loadedAnime {
+  0% {
+    opacity: 1;
+  }
+
+  99% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+    display: none;
+    z-index: -1;
+  }
+}
+
+.loading-icon {
+  animation: loadingAnime 1s infinite linear;
+  border-top: 4px solid rgba(255, 0, 0, 0.8);
+  border-right: 4px solid rgba(255, 0, 0, 0.2);
+  border-bottom: 4px solid rgba(255, 0, 0, 0.2);
+  border-left: 4px solid rgba(255, 0, 0, 0.2);
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+}
+
+@keyframes loadingAnime {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#page-top-btn {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  color: white;
+  background-color: rgb(232, 230, 77);
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 65px;
+  background-color: rgb(60, 60, 60);
+  z-index: 15;
+}
+
+#title {
+  float: left;
+  margin-left: 30px;
+  line-height: 65px;
+  font-weight: normal;
+  font-size: 20px;
+}
+
+.title-link {
+  display: inline-block;
+  padding: 0 10px;
+  height: 100%;
+  color: white;
+}
+
+.menus {
+  float: right;
+  margin-right: 15px;
+}
+
+.menu-list {
+  float: left;
+  margin-right: 15px;
+  line-height: 65px;
+  font-size: 18px;
+}
+
+.menu-link {
+  display: inline-block;
+  padding: 0 10px;
+  height: 100%;
+  color: white;
+}
+
+#menu-bar {
+  display: none;
+  position: absolute;
+  top: 13px;
+  right: 30px;
+  font-size: 25px;
+  color: white;
+}
+
+.mobile-menu-wrapper {
+  position: fixed;
+  top: 50px;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  background-color: rgb(240, 240, 240);
+  box-shadow: 0 0 5px gray;
+  z-index: 10;
+  transition: all 0.5s;
+}
+
+.menu-hide {
+  transform: translateY(-100%);
+}
+
+.mobile-menu-title {
+  padding: 10px 0;
+  font-size: 16px;
+}
+
+.mobile-menu-contents {
+  border-top: 1px solid black;
+  display: none;
+}
+
+.mobile-menu-link {
+  display: block;
+  padding: 10px 0 10px 15px;
+  color: black;
+}
+
+.close-boad {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0);
+  z-index: 5;
+}
+
+.close-none {
+  display: none;
+}
+
+.main {
+  padding: 100px 0;
+}
+
+.swiper-container {
+  text-align: center;
+  margin: 0 auto 100px;
+  width: 100%;
+  max-width: 1170px;
+}
+
+.swiper-image {
+  width: 75%;
+  height: auto;
+}
+
+.tab-wrapper {
+  padding-bottom: 100px;
+}
+
+.tab-menus {
+  text-align: center;
+  display: flex;
+  margin: 0 auto;
+  width: 75%;
+}
+
+.tab-menu {
+  padding: 7px 0;
+  width: 33.33%;
+  font-weight: normal;
+  font-size: 18px;
+}
+
+.open-tab-menu {
+  border-bottom: 1.5px solid rgb(33, 148, 227);
+}
+
+.tab-sentence {
+  display: none;
+  margin: 0 auto;
+  padding-top: 20px;
+  width: 75%;
+}
+
+.open-tab-sentence {
+  display: block;
+}
+
+.more-read-wrapper {
+  text-align: center;
+  padding-bottom: 100px;
+}
+
+.more-read-sentence {
+  text-align: left;
+  margin: 0 auto;
+  width: 80%;
+  height: 100px;
+  overflow: hidden;
+}
+
+#more-read-btn {
+  position: relative;
+  top: -17px;
+  border-radius: 8px;
+  padding: 14px 40px;
+  font-size: 18px;
+  color: white;
+  background-color: rgb(37, 176, 163);
+  box-shadow: 0 0 5px gray;
+}
+
+#more-read-btn:hover {
+  background-color: rgb(25, 160, 150);
+}
+
+#link-in-page {
+  text-align: center;
+  margin-bottom: 1000px;
+  border-top: 1.5px solid black;
+  border-bottom: 1.5px solid black;
+  padding: 8px 0;
+  font-size: 20px;
+  letter-spacing: 3px;
+}
+
+.appear-contents {
+  opacity: 0;
+  transform: translateY(30px);
+  transition-duration: 500ms;
+  transition-property: opacity, transform;
+}
+
+.appeared-contents {
+  opacity: 1;
+  transform: translateY(0);
+}

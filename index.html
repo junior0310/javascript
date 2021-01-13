@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="robots" content="index,follow" />
+  <title>【完成版】あさのにじろうのJavaScirptマニュアル</title>
+  <meta name="description" content="JavaScirpt/jQuery/Swiperなどを利用した、web制作でよく使う機能まとめ。" />
+  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+  <link rel="stylesheet" href="stylesheet.css">
+  <link rel="stylesheet" href="responsive.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+  <div id="loading">
+    <div class="loading-icon"></div>
+  </div>
+
+  <div id="page-top-btn">
+    <p>↑</p>
+  </div>
+
+  <header>
+    <div class="container">
+      <h1 id="title"><a class="title-link" href="#link-in-page">Nijirou Asano</a></h1>
+
+      <ul class="menus">
+        <li class="menu-list"><a class="menu-link" href="#">menu</a></li>
+        <li class="menu-list"><a class="menu-link" href="#">menu</a></li>
+        <li class="menu-list"><a class="menu-link" href="#">menu</a></li>
+      </ul>
+
+      <i id="menu-bar" class="fas fa-bars"></i>
+    </div>
+  </header>
+
+  <nav class="mobile-menu-wrapper menu-hide">
+    <ul>
+      <li class="mobile-menu-title">menu1</li>
+      <ul class="mobile-menu-contents mobile-menu-hide">
+        <li><a class="mobile-menu-link" href="#">menu-a</a></li>
+        <li><a class="mobile-menu-link" href="#">menu-b</a></li>
+      </ul>
+
+      <li class="mobile-menu-title">menu2</li>
+      <ul class="mobile-menu-contents mobile-menu-hide">
+        <li><a class="mobile-menu-link" href="#">menu-a</a></li>
+        <li><a class="mobile-menu-link" href="#">menu-b</a></li>
+      </ul>
+
+      <li class="mobile-menu-title">menu3</li>
+      <ul class="mobile-menu-contents mobile-menu-hide">
+        <li><a class="mobile-menu-link" href="#">menu-a</a></li>
+        <li><a class="mobile-menu-link" href="#">menu-b</a></li>
+      </ul>
+    </ul>
+  </nav>
+
+  <div class="close-boad close-none"></div>
+
+  <div class="main">
+    <div class="swiper-container appear-contents">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img class="swiper-image" src="img/image1.jpeg" alt="Swiper01"></div>
+        <div class="swiper-slide"><img class="swiper-image" src="img/image2.jpeg" alt="Swiper02"></div>
+        <div class="swiper-slide"><img class="swiper-image" src="img/image3.jpeg" alt="Swiper03"></div>
+        <div class="swiper-slide"><img class="swiper-image" src="img/image4.jpeg" alt="Swiper03"></div>
+      </div>
+    </div>
+
+    <div class="tab-wrapper container appear-contents">
+      <div class="tab-menus">
+        <h3 class="tab-menu open-tab-menu">Menu1</h3>
+        <h3 class="tab-menu">Menu2</h3>
+        <h3 class="tab-menu">Menu3</h3>
+      </div>
+
+      <p class="tab-sentence open-tab-sentence">1ここに文章が入ります。 ここに文章が入ります。 ここに文章が入ります。 ここに文章が入ります。 ここに文章が入ります。
+        ここに文章が入ります。 ここに文章が入ります。 ここに文章が入ります。 ここに文章が入ります。 ここに文章が入ります。 ここに文章が入ります。 ここに文章が入ります。</p>
+      <p class="tab-sentence">2ここに文章が入ります。 ここに文章が入ります。 ここに文章が入ります。 ここに文章が入ります。 ここに文章が入ります。
+        ここに文章が入ります。 ここに文章が入ります。 ここに文章が入ります。 ここに文章が入ります。 ここに文章が入ります。 ここに文章が入ります。 ここに文章が入ります。</p>
+      <p class="tab-sentence">3ここに文章が入ります。 ここに文章が入ります。 ここに文章が入ります。 ここに文章が入ります。 ここに文章が入ります。
+        ここに文章が入ります。 ここに文章が入ります。 ここに文章が入ります。 ここに文章が入ります。 ここに文章が入ります。 ここに文章が入ります。 ここに文章が入ります。</p>
+    </div>
+
+    <div class="more-read-wrapper container appear-contents">
+      <p class="more-read-sentence">ここに文章が入ります。 ここに文章が入ります。 ここに文章が入ります。 ここに文章が入ります。 ここに文章が入ります。 ここに文章が入ります。
+        ここに文章が入ります。 ここに文章が入ります。 ここに文章が入ります。 ここに文章が入ります。 ここに文章が入ります。 ここに文章が入ります。 ここに文章が入ります。 ここに文章が入ります。
+        ここに文章が入ります。 ここに文章が入ります。 ここに文章が入ります。 ここに文章が入ります。 ここに文章が入ります。 ここに文章が入ります。 ここに文章が入ります。 ここに文章が入ります。
+        ここに文章が入ります。 ここに文章が入ります。 ここに文章が入ります。 ここに文章が入ります。 ここに文章が入ります。 ここに文章が入ります。 ここに文章が入ります。 ここに文章が入ります。
+        ここに文章が入ります。 ここに文章が入ります。 ここに文章が入ります。 ここに文章が入ります。 ここに文章が入ります。 ここに文章が入ります。 ここに文章が入ります。 ここに文章が入ります。</p>
+      <a id="more-read-btn" href="#">more read</a>
+    </div>
+
+    <div class="container">
+      <div id="link-in-page" class="appear-contents">here</div>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+
+</body>
+
+</html>

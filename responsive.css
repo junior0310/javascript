@@ -1,0 +1,86 @@
+@media screen and (min-width:1170px) {
+  #page-top-btn {
+    right: calc(50% - 535px);
+  }
+}
+
+@media screen and (max-width:670px) {
+  body {
+    font-size: 14px;
+  }
+
+  header {
+    height: 50px;
+  }
+
+  #title {
+    margin-left: 10px;
+    line-height: 50px;
+    font-size: 18px;
+  }
+
+  .menus {
+    display: none;
+  }
+
+  #menu-bar {
+    display: block;
+  }
+
+  .main {
+    padding: 75px 0;
+  }
+
+  .swiper-container {
+    margin: 0 auto 75px;
+  }
+
+  .swiper-image {
+    width: 100%;
+  }
+
+  .tab-wrapper {
+    padding-bottom: 75px;
+  }
+
+  .tab-menus {
+    width: 100%;
+  }
+
+  .tab-menu {
+    padding: 5px 0;
+    font-size: 16px;
+  }
+
+  .tab-sentence {
+    padding-top: 10px;
+    width: 100%;
+  }
+
+  .more-read-wrapper {
+    padding-bottom: 75px;
+  }
+
+  .more-read-sentence {
+    width: 100%;
+  }
+
+  #more-read-btn {
+    top: -13px;
+    padding: 12px 30px;
+    font-size: 16px;
+  }
+
+  #link-in-page {
+    padding: 6px 0;
+    font-size: 18px;
+  }
+
+  #page-top-btn {
+    right: 15px;
+    bottom: 15px;
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+  }
+}
